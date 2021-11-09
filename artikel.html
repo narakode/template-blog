@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Teknologi</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Icon Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    /* Body */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'PT Sans', sans-serif;
+      color: #2c3e50;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .container {
+      max-width: 1140px;
+      margin: auto;
+      padding: 0 1rem;
+    }
+
+    /* Header  */
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0;
+    }
+    header .left {
+      display: flex;
+      align-items: center;
+    }
+    header .logo {
+      margin-right: 1.5rem;
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #2c3e50;
+    }
+    header .header-link {
+      display: flex;
+    }
+    header .header-link a {
+      margin-right: 1rem;
+      color: #34495e;
+    }
+    header .header-link a:hover, header .header-link a.active {
+      color: #2c3e50;  
+    }
+    header .header-search {
+      padding: .8rem;
+      border: 1px solid #ecf0f1;
+      border-radius: 5px;
+    }
+    header .header-search:focus {
+      padding: .8rem;
+      outline: none;
+      border-color: #3498db;
+    }
+
+    /* Navbar  */
+    nav {
+      background-color: #3498db;
+    }
+    nav .nav-link {
+      display: flex;
+      margin: 0 -1rem;
+    }
+    nav a {
+      color: #ecf0f1;
+      padding: 1rem;
+      position: relative;
+    }
+    nav a:after {
+      content: '';
+      background-color: #f1c40f;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      display: none;
+    }
+    nav a:hover:after {
+      display: block;
+    }
+
+    /* Konten Utama  */
+    main {
+      display: flex;
+      margin: 2rem -1.5rem;
+    }
+    img {
+      max-width: 100%;
+    }
+    section.posts {
+      padding: 0 1.5rem;
+      width: 75%;
+    }
+    .posts .heading {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+      color: #2c3e50;
+    }
+
+    /* Daftar Artikel */
+    article {
+      display: flex;
+      margin: 0 -0.5rem 1.5rem -0.5rem;
+    }
+    article .post-thumbnail {
+      width: 30%;
+      max-height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      padding: 0 0.5rem;
+    }
+    article .post-content {
+      padding: 0.5rem;
+    }
+    article .post-link {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #2c3e50;
+      display: block;
+      margin-bottom: 0.7rem;
+    }
+    article .post-meta {
+      font-size: 14px;
+      color: #7f8c8d;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      line-height: 1.8;
+    }
+
+    /* Sidebar  */
+    aside {
+      padding: 0 1.5rem;
+    }
+    aside {
+      width: 25%;
+    }
+    .sidebar-content {
+      padding: 1rem;
+      border: 1px solid #ecf0f1;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+    .sidebar-content ul {
+      list-style: none;
+      padding: 1rem 0;
+    }
+    .sidebar-content li {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: flex-start;
+    }
+    .sidebar-icon {
+      margin-right: 15px;
+      margin-top: 2px;
+    }
+  </style>
+</head>
+<body> 
+  <!-- Template -->
+
+  <!-- Header -->
+  <div class="container">
+    <header>
+      <div class="left">
+        <a href="" class="logo">Blog Teknologi</a>
+        <div class="header-link">
+          <a href="" class="active">Beranda</a>
+          <a href="">Tentang</a>
+          <a href="">Kontak</a>
+        </div>
+      </div>
+
+      <div class="right">
+        <input type="search" placeholder="Cari Artikel" class="header-search">
+      </div>
+    </header>
+  </div>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <div class="nav-link">
+        <a href="">HTML</a>
+        <a href="">CSS</a>
+        <a href="">Javascript</a>
+        <a href="">PHP</a>
+        <a href="">Bootstrap</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Konten -->
+  <div class="container">
+    <main>
+      <section class="posts">
+        <h2 class="heading">Postingan Terbaru</h2>
+
+        <!-- Daftar Artikel -->
+        <article>
+          <img class="post-thumbnail" src="post-1.jpg">
+          <div class="post-content">
+            <a href="" class="post-link">Belajar HTML : Mengenal HTML</a>
+            <div class="post-meta">
+              <time>22 Mei 2020</time> - <span>oleh Narakode</span>
+            </div>
+            <p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Impedit eum accusamus sunt saepe officiis</p>
+          </div>
+        </article>
+        <article>
+          <img class="post-thumbnail" src="post-2.jpg">
+          <div class="post-content">
+            <a href="" class="post-link">Belajar CSS : Mendesain Button</a>
+            <div class="post-meta">
+              <time>22 Mei 2020</time> - <span>oleh Narakode</span>
+            </div>
+            <p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Dolores, unde id. Dolorem laboriosam dolor</p>
+          </div>
+        </article>
+        <article>
+          <img class="post-thumbnail" src="post-3.jpg">
+          <div class="post-content">
+            <a href="" class="post-link">Cara Membuat Form Login dengan HTML dan CSS</a>
+            <div class="post-meta">
+              <time>22 Mei 2020</time> - <span>oleh Narakode</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsa ab, reprehenderit unde maiores deleniti quod odio</p>
+          </div>
+        </article>
+        <article>
+          <img class="post-thumbnail" src="post-4.jpg">
+          <div class="post-content">
+            <a href="" class="post-link">Cara Menambahkan Ikon Pada Web Dengan Font Awesome</a>
+            <div class="post-meta">
+              <time>22 Mei 2020</time> - <span>oleh Narakode</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cumque nulla blanditiis illo dolorem</p>
+          </div>
+        </article>
+        <article>
+          <img class="post-thumbnail" src="post-5.jpg">
+          <div class="post-content">
+            <a href="" class="post-link">Belajar CSS : Membuat Gradasi Warna</a>
+            <div class="post-meta">
+              <time>22 Mei 2020</time> - <span>oleh Narakode</span>
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero placeat reiciendis officiis alias</p>
+          </div>
+        </article>
+
+        <!-- Artikel 6, Artikel 7, dst. -->
+      </section>
+
+      <!-- Sidebar -->
+      <aside>
+        <div class="sidebar-content">
+          <h2>Kategori</h2>
+          <ul>
+            <li>
+              <i class="fa fa-folder sidebar-icon"></i>
+              <a href="">HTML</a>
+            </li>
+            <li>
+              <i class="fa fa-folder sidebar-icon"></i>
+              <a href="">CSS</a>
+            </li>
+            <li>
+              <i class="fa fa-folder sidebar-icon"></i>
+              <a href="">Javascript</a>
+            </li>
+            <li>
+              <i class="fa fa-folder sidebar-icon"></i>
+              <a href="">PHP</a>
+            </li>
+            <li>
+              <i class="fa fa-folder sidebar-icon"></i>
+              <a href="">Bootstrap</a>
+            </li>
+            <!-- Daftar Lainya -->
+          </ul>
+        </div>
+        <div class="sidebar-content">
+          <h2>Post Populer</h2>
+          <ul>
+            <li>
+              <i class="fa fa-angle-right sidebar-icon"></i>
+              <a href="" class="post-link">Belajar HTML : Mengenal HTML</a>
+            </li>
+            <li>
+              <i class="fa fa-angle-right sidebar-icon"></i>
+              <a href="" class="post-link">Belajar CSS : Mendesain Button</a>
+            </li>
+            <li>
+              <i class="fa fa-angle-right sidebar-icon"></i>
+              <a href="" class="post-link">Cara Membuat Form Login dengan HTML dan CSS</a>
+            </li>
+            <li>
+              <i class="fa fa-angle-right sidebar-icon"></i>
+              <a href="" class="post-link">Cara Menambahkan Ikon Pada Web Dengan Font Awesome</a>
+            </li>
+            <li>
+              <i class="fa fa-angle-right sidebar-icon"></i>
+              <a href="" class="post-link">Belajar CSS : Membuat Gradasi Warna</a>
+            </li>
+            <!-- Postingan Populer Lainnya -->
+          </ul>
+        </div>
+      </aside>
+    </main>
+  </container>
+
+</body>
+</html>
