@@ -1,0 +1,281 @@
+/* Body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'PT Sans', sans-serif;
+  color: #2c3e50;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+/* Header  */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+header .left {
+  display: flex;
+  align-items: center;
+}
+header .logo {
+  margin-right: 1.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+header .header-link {
+  display: flex;
+}
+header .header-link a {
+  margin-right: 1rem;
+  color: #34495e;
+}
+header .header-link a:hover, header .header-link a.active {
+  color: #2c3e50;  
+}
+header .header-search {
+  padding: .8rem;
+  border: 1px solid #ecf0f1;
+  border-radius: 5px;
+}
+header .header-search:focus {
+  padding: .8rem;
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Navbar  */
+nav {
+  background-color: #3498db;
+}
+nav .nav-link {
+  display: flex;
+  margin: 0 -1rem;
+}
+nav a {
+  color: #ecf0f1;
+  padding: 1rem;
+  position: relative;
+}
+nav a:after {
+  content: '';
+  background-color: #f1c40f;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  display: none;
+}
+nav a:hover:after {
+  display: block;
+}
+
+/* Konten Utama  */
+main {
+  display: flex;
+  margin: 2rem -1rem;
+}
+img {
+  max-width: 100%;
+}
+section.posts {
+  padding: 0 1rem;
+  width: 75%;
+}
+.posts .heading {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+/* Daftar Artikel */
+article {
+  display: flex;
+  margin: 0 -0.5rem 1.5rem -0.5rem;
+}
+article .post-thumbnail {
+  width: 30%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  padding: 0 0.5rem;
+}
+article .post-content {
+  padding: 0.5rem;
+}
+article .post-link {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #2c3e50;
+  display: block;
+  margin-bottom: 0.7rem;
+}
+article .post-meta {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 0.5rem;
+}
+p {
+  line-height: 1.8;
+}
+
+/* Sidebar  */
+aside {
+  padding: 0 1rem;
+}
+aside {
+  width: 25%;
+}
+.sidebar-content {
+  padding: 1rem;
+  border: 1px solid #ecf0f1;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.sidebar-content ul {
+  list-style: none;
+  padding: 1rem 0;
+}
+.sidebar-content li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+.sidebar-icon {
+  margin-right: 15px;
+  margin-top: 2px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+}
+.pagination-link {
+  padding: 10px 15px;
+  border: 1px solid #ecf0f1;
+  border-right-width: 0;
+}
+.pagination-link:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.pagination-link:last-child {
+  border-right-width: 1px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.pagination-link.active {
+  background-color: #3498db;
+  border-color: #3498db;
+  color: #fff;
+}
+.pagination-link:hover, span.pagination-link {
+  background-color: #ecf0f1;
+}
+
+/* Footer */
+footer {
+  background-color: #34495e;
+  color: #ecf0f1;
+  padding: 1.5rem 0;
+}
+.footer-link {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+.footer-link a {
+  padding: 0 0.5rem;
+}
+
+/* Artikel */
+.post-single, .comments {
+  border: 1px solid #ecf0f1;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+.post-banner {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.post-content, .comments {
+  padding: 1.5rem;
+}
+.post-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+.post-meta {
+  margin-bottom: 0.8rem;
+  color: #7f8c8d;
+}
+.post-meta a {
+  color: #2980b9;
+}
+.post-text {
+  font-size: 1.1rem;
+}
+.post-text h2 {
+  margin-top: 2rem;
+}
+.post-text h2, .post-text p, .post-text img {
+  margin-bottom: 1rem;
+}
+
+/* Form Komentar */
+.comment-title {
+  margin-bottom: 1.5rem;
+}
+.comment-form {
+  margin-bottom: 1rem;
+}
+.comment-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.comment-input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+.comment-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+/* Komentar */
+.comment {
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+.comment .comment-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.comment .comment-date {
+  font-size: .9rem;
+  color: #7f8c8d;
+}
+.comment .comment-content {
+  padding: 0px 10px;
+}

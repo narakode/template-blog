@@ -13,166 +13,8 @@
   <!-- Icon Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <style>
-    /* Body */
-    * {
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'PT Sans', sans-serif;
-      color: #2c3e50;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    .container {
-      max-width: 1140px;
-      margin: auto;
-      padding: 0 1rem;
-    }
-
-    /* Header  */
-    header {
-      display: flex;
-      justify-content: space-between;
-      padding: 1rem 0;
-    }
-    header .left {
-      display: flex;
-      align-items: center;
-    }
-    header .logo {
-      margin-right: 1.5rem;
-      font-weight: bold;
-      font-size: 1.2rem;
-      color: #2c3e50;
-    }
-    header .header-link {
-      display: flex;
-    }
-    header .header-link a {
-      margin-right: 1rem;
-      color: #34495e;
-    }
-    header .header-link a:hover, header .header-link a.active {
-      color: #2c3e50;  
-    }
-    header .header-search {
-      padding: .8rem;
-      border: 1px solid #ecf0f1;
-      border-radius: 5px;
-    }
-    header .header-search:focus {
-      padding: .8rem;
-      outline: none;
-      border-color: #3498db;
-    }
-
-    /* Navbar  */
-    nav {
-      background-color: #3498db;
-    }
-    nav .nav-link {
-      display: flex;
-      margin: 0 -1rem;
-    }
-    nav a {
-      color: #ecf0f1;
-      padding: 1rem;
-      position: relative;
-    }
-    nav a:after {
-      content: '';
-      background-color: #f1c40f;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      height: 2px;
-      width: 100%;
-      display: none;
-    }
-    nav a:hover:after {
-      display: block;
-    }
-
-    /* Konten Utama  */
-    main {
-      display: flex;
-      margin: 2rem -1rem;
-    }
-    img {
-      max-width: 100%;
-    }
-    section.posts {
-      padding: 0 1rem;
-      width: 75%;
-    }
-    .posts .heading {
-      font-size: 1.75rem;
-      margin-bottom: 1.5rem;
-      color: #2c3e50;
-    }
-
-    /* Daftar Artikel */
-    article {
-      display: flex;
-      margin: 0 -0.5rem 1.5rem -0.5rem;
-    }
-    article .post-thumbnail {
-      width: 30%;
-      max-height: 150px;
-      object-fit: cover;
-      border-radius: 10px;
-      padding: 0 0.5rem;
-    }
-    article .post-content {
-      padding: 0.5rem;
-    }
-    article .post-link {
-      font-weight: bold;
-      font-size: 1.5rem;
-      color: #2c3e50;
-      display: block;
-      margin-bottom: 0.7rem;
-    }
-    article .post-meta {
-      font-size: 14px;
-      color: #7f8c8d;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      line-height: 1.8;
-    }
-
-    /* Sidebar  */
-    aside {
-      padding: 0 1rem;
-    }
-    aside {
-      width: 25%;
-    }
-    .sidebar-content {
-      padding: 1rem;
-      border: 1px solid #ecf0f1;
-      border-radius: 5px;
-      margin-bottom: 1rem;
-    }
-    .sidebar-content ul {
-      list-style: none;
-      padding: 1rem 0;
-    }
-    .sidebar-content li {
-      margin-bottom: 1rem;
-      display: flex;
-      align-items: flex-start;
-    }
-    .sidebar-icon {
-      margin-right: 15px;
-      margin-top: 2px;
-    }
-  </style>
+  <!-- CSS Template -->
+  <link rel="stylesheet" href="blog.css">
 </head>
 <body> 
   <!-- Template -->
@@ -212,61 +54,86 @@
   <div class="container">
     <main>
       <section class="posts">
-        <h2 class="heading">Postingan Terbaru</h2>
+        <!-- Artikel -->
+        <div class="post-single">
+          <img src="post-5.jpg" alt="" class="post-banner">
+          <div class="post-content">
+            <h1 class="post-title">Properti CSS Untuk Mengatur Font</h1>
+            <div class="post-meta">
+              <time>22 Mei 2020</time> - oleh <span>Narakode</span> | <a href="">HTML</a>, <a href="">CSS</a>
+            </div>
+            <div class="post-text">
+             <!-- Isi Artikel -->
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, cum. Laboriosam cumque delectus inventore nobis, quis, quo ipsa voluptate molestiae modi, hic ut dolor atque vero maxime quas a, fugiat?</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Nemo ipsum esse vero consequatur cumque labore commodi, numquam beatae quod, odio, quasi facilis ut incidunt velit autem atque. Distinctio, error, officiis.</p>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos consectetur</p>
+             <h2>Lorem ipsum dolor</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facilis vero natus itaque sapiente ipsa iure corporis illo velit dicta, aut cum tenetur reiciendis, quas ad, id repudiandae eius ratione.</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis consectetur soluta explicabo harum enim sunt eius esse ipsa aperiam laudantium ullam ad non, totam officia culpa accusantium possimus, ratione iure.</p>
+             <h2>Fugiat temporibus</h2>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum deleniti illum exercitationem neque qui optio, aut odit quibusdam assumenda illo corrupti quasi dignissimos, cumque! Neque ad debitis temporibus culpa blanditiis.</p>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus repellendus est doloremque, laudantium quaerat blanditiis aspernatur nesciunt sapiente incidunt, omnis ut sit ea aliquam, iste labore id molestiae culpa velit!</p>
+             <p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Laudantium omnis, distinctio temporibus corporis ea error hic doloribus. Placeat eum delectus, fugit quisquam, accusamus ab iste voluptatibus quaerat culpa officiis laborum.</p>
+            </div>
+          </div>
+        </div>
 
-        <!-- Daftar Artikel -->
-        <article>
-          <img class="post-thumbnail" src="post-1.jpg">
-          <div class="post-content">
-            <a href="" class="post-link">Belajar HTML : Mengenal HTML</a>
-            <div class="post-meta">
-              <time>22 Mei 2020</time> - <span>oleh Narakode</span>
-            </div>
-            <p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Impedit eum accusamus sunt saepe officiis</p>
+        <!-- Form Komentar -->
+        <div class="comments">
+          <h1 class="comment-title">Komentar Baru</h1>
+          <div class="comment-form">
+            <label>Nama</label>
+            <input type="text" class="comment-input" placeholder="Nama">
           </div>
-        </article>
-        <article>
-          <img class="post-thumbnail" src="post-2.jpg">
-          <div class="post-content">
-            <a href="" class="post-link">Belajar CSS : Mendesain Button</a>
-            <div class="post-meta">
-              <time>22 Mei 2020</time> - <span>oleh Narakode</span>
-            </div>
-            <p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Dolores, unde id. Dolorem laboriosam dolor</p>
+          <div class="comment-form">
+            <label>Komentar</label>
+            <textarea class="comment-input" placeholder="Komentar" rows="5"></textarea>
           </div>
-        </article>
-        <article>
-          <img class="post-thumbnail" src="post-3.jpg">
-          <div class="post-content">
-            <a href="" class="post-link">Cara Membuat Form Login dengan HTML dan CSS</a>
-            <div class="post-meta">
-              <time>22 Mei 2020</time> - <span>oleh Narakode</span>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsa ab, reprehenderit unde maiores deleniti quod odio</p>
+          <div class="comment-form">
+            <button class="comment-button">Kirim</button>
           </div>
-        </article>
-        <article>
-          <img class="post-thumbnail" src="post-4.jpg">
-          <div class="post-content">
-            <a href="" class="post-link">Cara Menambahkan Ikon Pada Web Dengan Font Awesome</a>
-            <div class="post-meta">
-              <time>22 Mei 2020</time> - <span>oleh Narakode</span>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi cumque nulla blanditiis illo dolorem</p>
-          </div>
-        </article>
-        <article>
-          <img class="post-thumbnail" src="post-5.jpg">
-          <div class="post-content">
-            <a href="" class="post-link">Belajar CSS : Membuat Gradasi Warna</a>
-            <div class="post-meta">
-              <time>22 Mei 2020</time> - <span>oleh Narakode</span>
-            </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero placeat reiciendis officiis alias</p>
-          </div>
-        </article>
+        </div>
 
-        <!-- Artikel 6, Artikel 7, dst. -->
+        <!-- Daftar Komentar -->
+        <div class="comments">
+          <h1 class="comment-title">Komentar (4)</h1>
+
+          <div class="comment">
+            <img src="post-1.jpg" class="comment-img">
+            <div class="comment-content">
+              <h4>Hadi Wadi</h4>
+              <time class="comment-date">2 jam yang lalu</time>
+              <p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Rem, quas dolore, vitae suscipit cum id dolorem dicta recusandae, esse ad corrupti accusamus tempore, omnis sed. Voluptatibus voluptatum iste rerum omnis!</p>
+            </div>
+          </div>
+
+          <div class="comment">
+            <img src="post-2.jpg" class="comment-img">
+            <div class="comment-content">
+              <h4>Rida Redo</h4>
+              <time class="comment-date">2 hari lalu</time>
+              <p>Bagus juga gan</p>
+            </div>
+          </div>
+
+          <div class="comment">
+            <img src="post-3.jpg" class="comment-img">
+            <div class="comment-content">
+              <h4>Amin Ngalamun</h4>
+              <time class="comment-date">2 bulan lalu</time>
+              <p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Esse quas iusto alias nam, suscipit</p>
+            </div>
+          </div>
+
+          <div class="comment">
+            <img src="post-4.jpg" class="comment-img">
+            <div class="comment-content">
+              <h4>Rafi Jr</h4>
+              <time class="comment-date">2 bulan lalu</time>
+              <p>Bagus bang Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eos sint</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Sidebar -->
@@ -326,6 +193,18 @@
       </aside>
     </main>
   </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-link">
+        <a href=""><b>&copy; 2021 - Narakode</b></a>
+        <a href="">Tentang</a>
+        <a href="">Kontak</a>
+        <a href="">Dukung</a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
