@@ -280,3 +280,32 @@ footer {
 .comment .comment-content {
   padding: 0px 10px;
 }
+@media screen and (max-width: 1024px) {
+  main {
+    flex-wrap: wrap;
+  }
+  section.posts, aside {
+    width: 100%;
+  }
+  .pagination {
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .header-link {
+    display: none;
+  }
+
+  article {
+    flex-wrap: wrap;
+  }
+  article .post-thumbnail {
+    width: 100%;
+    max-height: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  nav .nav-link {
+    overflow-x: scroll;
+  }
+}
